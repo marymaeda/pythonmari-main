@@ -1,5 +1,8 @@
-def soma(numero,numero1):
-    print(f'A soma dos números é: {numero + numero1}')
-numero = int(input("Informe um número inteiro: "))
-numero1 = int(input("Informe outro número inteiro: "))
-soma(numero,numero1)
+def celsius_para_fahrenheit(celsius):
+    return (9 * celsius / 5) + 32
+
+# Programa principal
+temperatura_c = float(input("Digite a temperatura em graus Celsius: "))
+temperatura_f = celsius_para_fahrenheit(temperatura_c)
+
+print(f"{temperatura_c}°C correspondem a {temperatura_f:.2f}°F")
